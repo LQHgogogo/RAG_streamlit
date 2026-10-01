@@ -38,7 +38,7 @@ class KnowledgeBaseService:
         self.chroma = Chroma(
             collection_name=config_data.collection_name,
             embedding_function=DashScopeEmbeddings(
-                model="text-embedding-v4",
+                model=config_data.embedding_model,
                 dashscope_api_key=config_data.KEY,
             ),
             persist_directory=config_data.persist_directory

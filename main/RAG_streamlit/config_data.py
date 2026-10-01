@@ -1,6 +1,6 @@
-from networkx.algorithms import similarity
+import os
 
-KEY = "sk-ws-H.PHDXRMY.2Hg5.MEQCIDDbSDFlqZ6nPnAlw6_LiFw4HUMBsW9bELUpNh6vKYGtAiAA-m3ecXHhwHc34rEQnxM19umrnaSAIWc9lB-acA29kA"
+KEY = os.getenv('BAILIAN_API_KEY')
 
 md5_path = "./md5.txt"
 
@@ -17,3 +17,9 @@ separators = ["\n\n", "\n", " ", "?","!",",",".","，","。"]
 max_split_char_num = 1000
 
 similarity_threshold = 2
+
+embedding_model = "text-embedding-v4"
+
+chatModel = "deepseek-flash"
+
+chatKey = os.getenv('DEEPSEEK_API_KEY')
