@@ -1,0 +1,77 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "你好",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "你好！我在呢。你这次说的是“你好，请回答”，但没有给出具体问题。\n\n根据之前的对话，你问过：\n1. “你是什么模型”\n2. “我上次问了你什么”\n\n如果你想继续聊，可以直接把问题发给我，我会尽力回答。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你是什么模型",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "我是人工智能助手，由大语言模型驱动。不过，我无法仅凭当前对话确认自己具体的模型名称或版本；这通常取决于你当前使用的平台/应用配置。建议查看所用产品的“关于”或模型说明页面。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我上次问了你什么",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "你上次问我的是：**“你是什么模型”**。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]
