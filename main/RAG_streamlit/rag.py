@@ -12,7 +12,7 @@ import config_data
 
 class RagService:
     def __init__(self):
-        self.vector_store = vector_store.VectorStore(
+        self.vector_store = vector_store.VectorStoreService(
             embedding=DashScopeEmbeddings(
                 model=config_data.embedding_model,
                 dashscope_api_key=config_data.KEY,
@@ -36,10 +36,15 @@ class RagService:
     def __get_chain(self):
         retriever = self.vector_store.get_retriever()
 
+        def print_prompt(prompt):
+            print(prompt)
+            print("="*50)
+            return prompt
+
         def __format_doc(docs: list[Document]):
             if not docs:
                 return "无相关参考资料"
-            return "\n".join(doc.page_content+"\n"+doc.metadata["source"] for doc in docs)
+            return "\n".join(doc.page_content+"\n"+doc.metadata for doc in docs)
 
         chain = (
             {
@@ -47,6 +52,10 @@ class RagService:
                 "reference": retriever | self.__format_doc
             }
             | self.prompt_template
+            | print_prompt
             | self.chat_model
             | StrOutputParser()
         )
+
+        return chain
+
