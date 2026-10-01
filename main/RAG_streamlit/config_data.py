@@ -23,3 +23,11 @@ embedding_model = "text-embedding-v4"
 chatModel = "deepseek-flash"
 
 chatKey = os.getenv('DEEPSEEK_API_KEY')
+
+history_storage_path = "./chat_history"
+
+session_config = {
+    "configurable": {
+        "session_id": "user_1"
+    }
+}

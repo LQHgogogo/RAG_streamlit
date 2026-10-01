@@ -1,0 +1,52 @@
+[
+    {
+        "type": "human",
+        "data": {
+            "content": "你好",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        }
+    },
+    {
+        "type": "ai",
+        "data": {
+            "content": "你好！很高兴为你服务。\n\n我掌握关于 **AI Agent（智能体）** 的相关知识，可以为你解答以下方面的问题：\n\n- **概念与定位**：Agent 与传统 AI 系统的区别，为何被视为大模型之后的重要技术范式\n- **核心架构**：感知、规划、记忆、行动四大模块及其协同机制\n- **应用场景**：软件开发、数据分析、企业服务等领域的实践\n- **挑战与趋势**：长程规划稳定性、工具调用可靠性、安全可控性等前沿议题\n\n请随时提出你的问题，我会为你简洁专业地解答。",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "ai",
+            "name": null,
+            "id": null,
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": null
+        }
+    },
+    {
+        "type": "human",
+        "data": {
+            "content": "agent是什么",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        }
+    },
+    {
+        "type": "ai",
+        "data": {
+            "content": "**AI Agent（智能体）** 是一种能够自主感知环境、规划任务、调用工具并迭代执行的智能系统。\n\n它与传统 AI 系统的主要区别在于：传统系统通常只被动响应单次指令，而 Agent 可以在“感知—思考—行动—反馈”的闭环中，自主完成复杂任务。\n\n一个完整的 AI Agent 通常包含四个核心模块：\n\n- **感知模块**：接收外部信息与反馈\n- **规划模块**：基于大语言模型进行任务分解与路径设计\n- **记忆模块**：通过短期和长期记忆存储上下文与经验\n- **行动模块**：调用 API、代码执行、搜索引擎等工具与外部世界交互\n\n其核心价值在于，把大语言模型从“对话工具”升级为“任务执行者”，例如自主编写和调试代码、规划数据分析流程、充当智能客服或流程自动化助手等。\n\n当前 Agent 仍面临长程规划稳定性、工具调用可靠性、安全可控性等挑战，但被普遍视为连接大模型与实际业务场景的关键桥梁。",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "ai",
+            "name": null,
+            "id": null,
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": null
+        }
+    }
+]
