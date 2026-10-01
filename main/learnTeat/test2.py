@@ -1,8 +1,9 @@
 from langchain_community.embeddings import DashScopeEmbeddings
+import os
 
 embeddings = DashScopeEmbeddings(
     model="text-embedding-v1",
-    dashscope_api_key="sk-ws-H.PHDXRMY.2Hg5.MEQCIDDbSDFlqZ6nPnAlw6_LiFw4HUMBsW9bELUpNh6vKYGtAiAA-m3ecXHhwHc34rEQnxM19umrnaSAIWc9lB-acA29kA",
+    dashscope_api_key=os.getenv("BAILIAN_API_KEY"),
 )
 
 vector = embeddings.embed_query("你好")

@@ -2,10 +2,11 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+import os
 
 embedding = DashScopeEmbeddings(
     model="text-embedding-v1",
-    dashscope_api_key="sk-ws-H.PHDXRMY.2Hg5.MEQCIDDbSDFlqZ6nPnAlw6_LiFw4HUMBsW9bELUpNh6vKYGtAiAA-m3ecXHhwHc34rEQnxM19umrnaSAIWc9lB-acA29kA",
+    dashscope_api_key=os.getenv("BAILIAN_API_KEY"),
 )
 
 vector_store = InMemoryVectorStore(embedding)
